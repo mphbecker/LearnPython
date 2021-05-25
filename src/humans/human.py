@@ -7,7 +7,7 @@ class Sex(Enum):
 
 
 class Human:
-
+    #Peter ist braun
     def __init__(self, age: int, sex: Sex, name: str):
         self.age = age
         self.sex = sex
