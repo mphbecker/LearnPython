@@ -7,7 +7,7 @@ class Sex(Enum):
 
 
 class Human:
-    #my code is better than marcs
+    #my code is better than marx
     def __init__(self, age: int, sex: Sex, name: str):
         self.age = age
         self.sex = sex
