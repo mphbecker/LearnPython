@@ -17,6 +17,12 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             horst = Human(-48, Sex.MALE, "Horsti")
 
+    def test_invalid_name_human(self):
+        with self.assertRaises(ValueError):
+            horst = Human(12, Sex.MALE, None)
+        with self.assertRaises(ValueError):
+            bernd = Human(12, Sex.FEMALE, "")
+
 
 if __name__ == '__main__':
     unittest.main()
